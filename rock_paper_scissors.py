@@ -10,18 +10,18 @@ def print_menu():
     print()
 
 def compare(weapon1, weapon2):
-    result = None
-    if weapon1 == '1' and weapon2 == '2':       # Sten vs. sax
+    result = 0
+    if weapon1 == '1' and weapon2 == '2':       # Rock vs. scissors
         result = 1
-    elif weapon1 == '1' and weapon2 == '3':     # Sten vs. påse
+    elif weapon1 == '1' and weapon2 == '3':     # Rock vs. paper
         result = 2
-    elif weapon1 == '2' and weapon2 == '1':     # Sax vs. sten
+    elif weapon1 == '2' and weapon2 == '1':     # Scissors vs. rock
         result = 2
-    elif weapon1 == '2' and weapon2 == '3':     # Sax vs. påse
+    elif weapon1 == '2' and weapon2 == '3':     # Scissors vs. paper
         result = 1
-    elif weapon1 == '3' and weapon2 == '1':     # Påse vs. sten
+    elif weapon1 == '3' and weapon2 == '1':     # Paper vs. rock
         result = 1
-    elif weapon1 == '3' and weapon2 == '2':     # Påse vs. sax
+    elif weapon1 == '3' and weapon2 == '2':     # Paper vs. scissors
         result = 2
 
     return result
